@@ -1,0 +1,115 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  background-color: #f0f4f8;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #6c5ce7;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6c5ce7, #0984e3);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #74b9ff, #6c5ce7);
+  transform: translateY(-2px);
+}
+
+/* Resume Display Styles */
+#resume-display {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+#resume-display:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Shareable Link Section */
+#shareable-link-container {
+  margin-top: 20px;
+  display: none;
+}
+
+#shareable-link {
+  color: #6c5ce7;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#shareable-link:hover {
+  color: #0984e3;
+  text-decoration: underline;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  #resume-display {
+    padding: 15px;
+  }
+}
